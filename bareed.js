@@ -43,11 +43,17 @@ class Point {
  **********************************************************/
 class Wallet {
   // implement Wallet!
-  constructor(money = 0) {}
+  constructor(money = 0) {
+    this.money = money;
+  }
 
-  credit = amount => {};
+  credit = amount => {
+    let moreMoney = this.money += amount ;
+  };
 
-  debit = amount => {};
+  debit = amount => {
+    let deducts = this.money -= amount;
+  };
 }
 
 /**********************************************************
@@ -63,6 +69,16 @@ class Wallet {
  **********************************************************/
 class Person {
   // implement Person!
+  constructor(name, x, y){
+    this.name = name;
+    // this.point = new Point(x,y);
+    // this.wallet = new Wallet(money=0);
+  }
+
+  // locaton = new Point() 
+
+  // wallet = new Wallet(money = 0);
+
 }
 
 /**********************************************************
